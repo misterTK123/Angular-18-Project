@@ -1,0 +1,32 @@
+<h4>Loop topics</h4>
+@for (item of data; track $index) {
+    <p>{{item.cuntry}}</p>
+}
+
+<br>
+<select>
+    @for (  item of studentdata; track $index) {
+        <option>{{item}}</option>
+    }
+</select>
+<br>
+<br>
+<ol>
+    @for (item of studentdatalist; track $index) {
+        <li>id :{{item.id}}, name:{{item.name}}, age :{{item.age}}</li>
+    }
+</ol>
+<br>
+<p>Today is  
+    @switch (daynumber) {
+        @case ('1') {<span>monday</span>}
+        @case ('2') {<span>tuesday</span>}
+        @case ('3') {<span>wenesday</span>}
+        @case ('4') {<span>turesday</span>}
+        @case ('5') {<span>friday</span>}
+        @case ('6') {<span>sutarday</span>}
+        @case ('7') {<span>sunday</span>}
+        @default {<span>Nothing to show</span>}
+        
+    }
+</p>

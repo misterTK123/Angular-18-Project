@@ -1,0 +1,22 @@
+<h4> Reactve Form</h4>
+<div>
+    <p>Login</p>
+    <div>
+        <label>Email <input type="email" placeholder="e.g @gmail.com" [(ngModel)]="Email" ></label>
+    </div>
+    <div>
+        <label>Password <input type="password" placeholder=" 123tdieh" [(ngModel)]="Password"></label>
+    </div>
+    <div>
+        <button (click)="save()">submit</button>
+    </div>
+    
+</div>
+<form  [formGroup]="login">
+    <div>
+        <label><input type="text" readonly formControlName="email"></label><br>
+        <label><input type="text" readonly formControlName="password"></label>
+        
+    </div>
+
+</form>

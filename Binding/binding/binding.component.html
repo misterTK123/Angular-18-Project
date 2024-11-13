@@ -1,0 +1,17 @@
+<h4> Binding of Data,Events,Methods</h4>
+   <p>ON basis of intrepolation</p>
+     <input type={{type}}  placeholder={{placeholder}}>
+  <br>
+  
+  <p> ON basis  property binding</p>
+     <input [type]="type" [placeholder]="placeholder">
+  <br>
+
+  <p> Two way data binding </p>
+     <input [type]="type" placeholder="enter the name " [(ngModel)]="stdname">
+  <p> my name is {{stdname}}</p>
+  <br>
+  <p>property binding</p>
+   <button [class]="myclass"> clicknext</button><br>
+   <button (click)="alerts()">methodebinding</button>
+   <br>
